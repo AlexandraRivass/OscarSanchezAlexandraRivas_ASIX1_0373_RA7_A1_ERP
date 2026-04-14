@@ -1,11 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistemas ERP — Documento Web</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+<!-- ==================== HEADER ==================== -->
+<header>
+  <div class="header-inner">
+    <p class="label">Actividad de Sistemas de Gestión Empresarial</p>
+    <h1>Sistemas ERP:<br>Integración y Comparativa</h1>
+    <p class="subtitle">Análisis teórico, estudio comparativo de productos y conclusiones sobre la implementación de sistemas de planificación de recursos empresariales.</p>
+  </div>
+</header>
+
+<!-- ==================== NAV ==================== -->
+<nav class="toc" aria-label="Tabla de contenidos">
+  <ul>
+    <li><a href="#introduccion">Introducción</a></li>
+    <li><a href="#comparativa">Comparativa ERP</a></li>
+    <li><a href="#conclusiones">Conclusiones</a></li>
+  </ul>
+</nav>
+
+<!-- ==================== MAIN ==================== -->
+<main>
+
+  <!-- ===== SECCIÓN 1: INTRODUCCIÓN ===== -->
+  <section id="introduccion">
+    <p class="section-tag">Apartado 1</p>
+    <h2 class="section-title">Introducción — Preguntas Teóricas</h2>
+
+    <!-- a -->
+    <div class="question-block">
+      <button class="question-header" aria-expanded="false" onclick="toggle(this)">
+        <span class="q-label">A</span>
+        <span>¿Qué es un ERP?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="question-body">
+        <p>Un ERP (<em>Enterprise Resource Planning</em>) es un sistema de software que integra todos los departamentos de una empresa para que mantengan una comunicación continua entre sí.</p>
+        <p>Cuando se produce un cambio en un departamento, el sistema se encarga de actualizar y avisar a todos los demás departamentos afectados, evitando fallos por descuidos en la actualización manual de datos.</p>
+      </div>
+    </div>
+
+    <!-- b -->
+    <div class="question-block">
+      <button class="question-header" aria-expanded="false" onclick="toggle(this)">
+        <span class="q-label">B</span>
+        <span>¿Para qué sirve?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="question-body">
+        <p>Su función principal es <strong>conectar los departamentos</strong> que requieren comunicación por dependencia de datos, asegurando que la información correcta llegue al lugar correcto en el momento adecuado.</p>
+      </div>
+    </div>
+
+    <!-- c -->
+    <div class="question-block">
+      <button class="question-header" aria-expanded="false" onclick="toggle(this)">
+        <span class="q-label">C</span>
+        <span>¿Qué funciones realiza?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="question-body">
+        <p>La función principal es <strong>unificar la base de datos</strong>. Al centralizar la información, todos los departamentos trabajan con los mismos datos actualizados en tiempo real.</p>
+        <p>A partir de esa base centralizada, sus funciones clave son:</p>
+        <ul>
+          <li><strong>Automatización de procesos:</strong> cuando se registra una venta o el stock de un producto baja del mínimo, el sistema envía automáticamente una notificación al módulo correspondiente.</li>
+          <li>Sincronización en tiempo real entre áreas (ventas, almacén, finanzas, RRHH…).</li>
+          <li>Generación de informes y reportes de rendimiento empresarial.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- d -->
+    <div class="question-block">
+      <button class="question-header" aria-expanded="false" onclick="toggle(this)">
+        <span class="q-label">D</span>
+        <span>¿Qué tipos de módulos hay? ¿Cómo los clasificarías? ¿Puedo instalar cualquier módulo?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="question-body">
+        <p>Los principales módulos de un ERP son:</p>
+        <div class="module-grid">
+          <div class="module-card">
+            <p class="mod-title">💰 Financiero</p>
+            <p>Gestión del dinero y el presupuesto. Imprescindible para la toma de decisiones.</p>
+          </div>
+          <div class="module-card">
+            <p class="mod-title">📦 Gestión de Inventarios</p>
+            <p>Evita roturas de stock y controla el movimiento de mercancías.</p>
+          </div>
+          <div class="module-card">
+            <p class="mod-title">🛒 Ventas y CRM</p>
+            <p>Maneja datos de ventas y ayuda a mantener a los clientes satisfechos.</p>
+          </div>
+          <div class="module-card">
+            <p class="mod-title">🚚 Compras / Aprovisionamiento</p>
+            <p>Controla compras a proveedores para asegurar el suministro.</p>
+          </div>
+          <div class="module-card">
+            <p class="mod-title">👥 Recursos Humanos</p>
+            <p>Gestiona empleados: salarios, nóminas, vacaciones y bajas.</p>
+          </div>
+          <div class="module-card">
+            <p class="mod-title">🏭 Producción / Manufactura</p>
+            <p>Planifica y controla la fabricación. Solo necesario si la empresa produce.</p>
+          </div>
+          <div class="module-card">
+            <p class="mod-title">📊 Informes y Análisis</p>
+            <p>Detecta tendencias, épocas de mayor demanda y rendimiento por producto.</p>
+          </div>
+        </div>
+        <h3 class="subsection-title">Clasificación</h3>
+        <ul>
+          <li><strong>Básicos:</strong> los que necesita cualquier empresa (finanzas, ventas, compras, RRHH).</li>
+          <li><strong>Opcionales:</strong> dependen de la actividad (producción, inventarios).</li>
+          <li><strong>Verticales:</strong> diseñados para un sector concreto (trazabilidad en alimentación, gestión de camas en sanidad).</li>
+        </ul>
+        <h3 class="subsection-title">¿Puedo instalar cualquier módulo?</h3>
+        <p>No necesariamente. Depende de la licencia contratada, de la compatibilidad con la versión del ERP y de si tiene sentido para el negocio. Instalar un módulo de fabricación en una empresa de servicios no aporta nada y complica el sistema.</p>
+      </div>
+    </div>
+
+    <!-- e -->
+    <div class="question-block">
+      <button class="question-header" aria-expanded="false" onclick="toggle(this)">
+        <span class="q-label">E</span>
+        <span>¿Qué es la integración de módulos y por qué es beneficiosa?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="question-body">
+        <p>La integración de módulos es la capacidad del ERP para que todos los bloques funcionales compartan la misma base de datos y se comuniquen automáticamente, sin introducir datos dos veces.</p>
+        <ul>
+          <li><strong>Organización:</strong> toda la información en un mismo sitio, desde ventas hasta horarios de empleados.</li>
+          <li><strong>Ahorra tiempo:</strong> elimina el trabajo con hojas de cálculo separadas.</li>
+          <li><strong>Evita errores y duplicidades:</strong> si se vende un producto, el inventario se actualiza solo.</li>
+          <li><strong>Mejora la toma de decisiones:</strong> informes claros permiten, por ejemplo, anticipar pedidos antes de quedarse sin stock en temporadas de alta demanda.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- f -->
+    <div class="question-block">
+      <button class="question-header" aria-expanded="false" onclick="toggle(this)">
+        <span class="q-label">F</span>
+        <span>¿Qué beneficios aporta implementar un ERP respecto a otros enfoques?</span>
+        <span class="chevron">▼</span>
+      </button>
+      <div class="question-body">
+        <div class="benefit-list">
+          <div class="benefit-card">
+            <p class="b-number">01</p>
+            <p class="b-title">Integración de datos</p>
+            <p>Elimina silos de información. Una única fuente de verdad garantiza que todos trabajen con los mismos datos sin duplicados.</p>
+          </div>
+          <div class="benefit-card">
+            <p class="b-number">02</p>
+            <p class="b-title">Eficiencia operativa</p>
+            <p>Automatiza tareas manuales repetitivas, liberando tiempo para actividades de mayor valor para la empresa.</p>
+          </div>
+          <div class="benefit-card">
+            <p class="b-number">03</p>
+            <p class="b-title">Visibilidad en tiempo real</p>
+            <p>Ofrece una visión completa de las operaciones y permite generar informes precisos para tomar decisiones informadas.</p>
+          </div>
+          <div class="benefit-card">
+            <p class="b-number">04</p>
+            <p class="b-title">Reducción de costes</p>
+            <p>Consolida varios sistemas en uno, reduciendo gastos en licencias, mantenimiento e infraestructura TI.</p>
+          </div>
+          <div class="benefit-card">
+            <p class="b-number">05</p>
+            <p class="b-title">Escalabilidad</p>
+            <p>Los ERPs modernos crecen con la empresa, permitiendo añadir módulos o adaptarse a nuevos mercados.</p>
+          </div>
+          <div class="benefit-card">
+            <p class="b-number">06</p>
+            <p class="b-title">Mejor servicio al cliente</p>
+            <p>Con acceso inmediato a pedidos, inventarios y datos de clientes, la respuesta al usuario es más rápida y precisa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN 2: COMPARATIVA ===== -->
+  <section id="comparativa">
+    <p class="section-tag">Apartado 2</p>
+    <h2 class="section-title">Estudio Comparativo de Productos ERP</h2>
+
+    <p style="margin-bottom:20px; font-size:0.93rem; color:var(--text-muted);">A continuación se presenta una tabla resumen seguida de fichas detalladas de cada solución analizada: SAP, Microsoft Dynamics NAV (Business Central), Odoo y Cegid.</p>
+
+    <!-- TABLA COMPARATIVA -->
+    <div class="table-wrapper">
+      <table class="erp-table">
+        <thead>
+          <tr>
+            <th>Criterio</th>
+            <th>SAP</th>
+            <th>Microsoft Dynamics NAV</th>
+            <th>Odoo</th>
+            <th>Cegid</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Características</td>
+            <td>+50 módulos, IA integrada. Cubre finanzas, ventas, RRHH, compras, producción.</td>
+            <td>Integración nativa con Office 365, Copilot IA. Finanzas, ventas, cadena de suministro.</td>
+            <td>Módulos como plugins. +60 apps oficiales y miles de módulos de comunidad. API abierta.</td>
+            <td>IA para industria, distribución y HIS (hospitales). Despliegue flexible nube pública/privada.</td>
+          </tr>
+          <tr>
+            <td>Requisitos hardware</td>
+            <td>SaaS: navegador. On-premise: servidores certificados SAP HANA, alta RAM.</td>
+            <td>SaaS: navegador. Local: Windows Server, SQL Server, mín. 16 GB RAM recomendado.</td>
+            <td>SaaS: navegador. On-premise: Python, PostgreSQL. Compatible Linux, Windows y Docker.</td>
+            <td>Cloud-native: navegador web. Sin infraestructura local pesada al ser mayoritariamente SaaS.</td>
+          </tr>
+          <tr>
+            <td>Mercado objetivo</td>
+            <td>Grandes empresas: industria, farmacéutica, banca, manufactura.</td>
+            <td>PYMES: distribución, servicios, manufactura básica y comercio minorista.</td>
+            <td>PYMES de cualquier sector gracias a su precio accesible y alta modularidad.</td>
+            <td>Industria, manufactura, distribución, construcción y sanidad. PYMES y medianas empresas.</td>
+          </tr>
+          <tr>
+            <td>Licencias y precios</td>
+            <td>Profesional: 91 €/usr/mes (cloud) · 2.700 €/usr (on-prem). Starter: 38 €/mes.</td>
+            <td>Essential: 65,50 €/usr/mes · Premium: 93,60 €/usr/mes · Team: 7,50 €/usr/mes.</td>
+            <td>Community: gratuita (open source). Enterprise: desde 11,90 €/usr/mes.</td>
+            <td>Presupuesto a medida. Pago único o SaaS mensual. Precio no publicado oficialmente.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FICHAS DETALLADAS -->
+    <h3 class="subsection-title" style="margin-top:36px;">Fichas detalladas por producto</h3>
+    <div class="erp-cards">
+
+      <!-- SAP -->
+      <div class="erp-card sap">
+        <p class="erp-name">SAP <span class="badge">Gran empresa</span></p>
+        <div class="erp-row">
+          <span class="erp-key">Características</span>
+          <span class="erp-val">Gestiona todas las áreas clave: finanzas, ventas, compras, RRHH y producción. Incluye inteligencia artificial y más de 50 módulos configurables.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Hardware</span>
+          <span class="erp-val">Procesador doble núcleo, mín. 4 GB RAM, 30 GB de disco. On-premise requiere servidores certificados para SAP HANA.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Mercado</span>
+          <span class="erp-val">Grandes empresas de industria, farmacéutica, banca y manufactura.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Precio</span>
+          <span class="erp-val">Profesional: 91 €/usr/mes (cloud) · 2.700 €/usr (on-prem). Starter: desde 38 €/mes.</span>
+        </div>
+      </div>
+
+      <!-- Microsoft -->
+      <div class="erp-card ms">
+        <p class="erp-name">Microsoft Dynamics NAV <span class="badge">PYME</span></p>
+        <div class="erp-row">
+          <span class="erp-key">Características</span>
+          <span class="erp-val">Integración nativa con Microsoft 365 (Outlook, Excel). Copilot IA para automatizar tareas y predecir flujos de efectivo. Finanzas, ventas, almacenes y fabricación.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Hardware</span>
+          <span class="erp-val">On-premise: CPU 64 bits 2 GHz (mín. 2 núcleos), 8 GB RAM (16 rec.), 20 GB disco. Windows 10/11 o Server 2019/2022 + SQL Server 2019+.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Mercado</span>
+          <span class="erp-val">PYMES de distribución, servicios, manufactura básica y comercio minorista.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Precio</span>
+          <span class="erp-val">Essential 65,50 € · Premium 93,60 € · Team Members 7,50 € (usuario/mes).</span>
+        </div>
+      </div>
+
+      <!-- Odoo -->
+      <div class="erp-card odoo">
+        <p class="erp-name">Odoo <span class="badge">Flexible</span></p>
+        <div class="erp-row">
+          <span class="erp-key">Características</span>
+          <span class="erp-val">Módulos como plugins, +60 aplicaciones oficiales y miles de módulos de comunidad. API abierta para integraciones a medida.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Hardware</span>
+          <span class="erp-val">Mín. 2 núcleos CPU y 4 GB RAM, 20 GB disco. Producción recomendada: 4 núcleos y 8 GB RAM. Compatible con Linux, Windows y Docker.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Mercado</span>
+          <span class="erp-val">PYMES de cualquier sector gracias a su precio accesible y alta modularidad.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Precio</span>
+          <span class="erp-val">Community: gratuita (open source). Enterprise: desde 11,90 €/usr/mes.</span>
+        </div>
+      </div>
+
+      <!-- Cegid -->
+      <div class="erp-card cegid">
+        <p class="erp-name">Cegid <span class="badge">Sectorial</span></p>
+        <div class="erp-row">
+          <span class="erp-key">Características</span>
+          <span class="erp-val">IA para industria, distribución y HIS (gestión inteligente de hospitales). Despliegue flexible en nube pública o privada.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Hardware</span>
+          <span class="erp-val">Servidor: Intel i5+, 8 GB RAM, SSD recomendado. Puesto: Intel i3+, 4 GB RAM. Windows Server 2016 o superior.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Mercado</span>
+          <span class="erp-val">Industria, manufactura, distribución, construcción y sanidad. PYMES y medianas empresas.</span>
+        </div>
+        <div class="erp-row">
+          <span class="erp-key">Precio</span>
+          <span class="erp-val">Presupuesto a medida. Pago único (licencia perpetua) o SaaS mensual. Sin precio público.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN 3: CONCLUSIONES ===== -->
+  <section id="conclusiones">
+    <p class="section-tag">Apartado 3</p>
+    <h2 class="section-title">Conclusiones</h2>
+
+    <div class="conclusion-box">
+      <p>Tras estudiar qué es un ERP, cómo funciona y comparar cuatro de los productos más relevantes del mercado, se puede concluir que los sistemas ERP suponen un cambio fundamental en la forma en que las empresas gestionan su información. Centralizar todos los datos en una única plataforma elimina los errores producidos por sistemas inconexos y aumenta significativamente la eficiencia operativa.</p>
+    </div>
+
+    <div class="conclusion-box">
+      <p>En cuanto a la elección del producto, no existe una solución única válida para todas las empresas. <strong>SAP</strong> es la opción más potente y escalable, pero su coste y complejidad la dirigen claramente a grandes corporaciones. <strong>Microsoft Dynamics NAV (Business Central)</strong> resulta muy atractiva para PYMES que ya utilizan el ecosistema Microsoft, gracias a su integración con Office 365 y a un precio competitivo. <strong>Odoo</strong> destaca por su flexibilidad y por ofrecer una versión Community gratuita, lo que la convierte en la mejor opción para empresas que quieran comenzar sin una gran inversión inicial. Por su parte, <strong>Cegid</strong> es la alternativa más especializada, especialmente indicada para sectores como la sanidad, la industria o la distribución.</p>
+    </div>
+
+    <div class="conclusion-box">
+      <p>La integración de módulos es uno de los aspectos más valiosos de cualquier ERP: permite que un único cambio en un departamento se propague automáticamente al resto, eliminando duplicidades y garantizando que todos los trabajadores dispongan de información actualizada en tiempo real. Esta capacidad no solo ahorra tiempo, sino que mejora la toma de decisiones a todos los niveles de la organización.</p>
+    </div>
+
+    <div class="conclusion-box">
+      <p>En definitiva, la implementación de un ERP es una inversión estratégica que, si se planifica bien y se elige el producto adecuado al tamaño y sector de la empresa, produce beneficios claros y medibles: reducción de costes operativos, mayor agilidad de respuesta ante cambios del mercado y una base sólida para el crecimiento futuro.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <p><strong>Sistemas ERP — Documento Web</strong> · Actividad de Gestión Empresarial</p>
+  <p style="margin-top:6px;">Fuentes de referencia: <a href="https://www.oracle.com/es/erp/what-is-erp/" style="color:rgba(255,255,255,0.5);">Oracle</a> · <a href="https://www.sap.com/latinamerica/resources/what-is-erp" style="color:rgba(255,255,255,0.5);">SAP</a></p>
+</footer>
+
+<!-- ==================== JS ==================== -->
+<script>
+  function toggle(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = body.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.question-body').forEach(b => b.classList.remove('open'));
+    document.querySelectorAll('.question-header').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    // Open clicked if it was closed
+    if (!isOpen) {
+      body.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  }
+</script>
+
 </body>
 </html>
