@@ -40,13 +40,14 @@
   <section class="bloque_texto_img aparece">
     <div class="bloque_texto">
       <h2>Definición</h2>
-      <p>Un <strong>ERP</strong> (<em>Enterprise Resource Planning</em>) es un sistema de software que integra todos los departamentos de una empresa para que se comuniquen entre sí.</p>
-      <p>Cuando hay un cambio en un departamento, el sistema actualiza y avisa a los demás afectados. Así se evitan errores por actualizar datos manualmente.</p>
+      <p>
+      Es un <strong>sistema que integra a todos los departamentos</strong> para que tengan una comunicación entre sí. <br>
+      Este sistema permite que <strong>si hay un cambio en un departamento</strong> se actualice y/o avise a los otros departamentos que dependen o son afectados por ese cambio, <strong>asegurando un funcionamiento correcto</strong> y <strong>evitando fallos por descuidos</strong> a la hora de actualizar datos.
+      </p>
     </div>
     <figure class="bloque_figura">
       <!-- Imagen representativa del concepto ERP -->
-      <img src="../img/erp.gif" alt="Diagrama de un ERP conectando departamentos" />
-      <p class="texto_imagen">Esquema básico de un ERP integrando varios departamentos</p>
+      <img src="../img/definicion.png" alt="Diagrama de un ERP conectando departamentos" />
     </figure>
   </section>
 
@@ -54,46 +55,26 @@
   <section class="bloque_texto_img invertido aparece">
     <div class="bloque_texto">
       <h2>¿Para qué sirve?</h2>
-      <p>Su función principal es <strong>conectar los departamentos</strong> con dependencias de datos, asegurando que la información llegue a donde hace falta en el momento adecuado.</p>
-      <p>Si hay una venta, el almacén lo sabe. Si baja el stock, compras recibe una alerta. Sin que nadie tenga que avisar a nadie.</p>
+      <p>Su <strong>función principal es conectar los departamentos</strong> que requieren una comunicación por dependencias de datos, <strong>asegurando que la información llegue correctamente</strong>./p>
     </div>
     <figure class="bloque_figura">
-      <img src="../img/erp.gif" alt="Flujo de datos entre departamentos" />
-      <p class="texto_imagen">Flujo automático de información entre ventas, almacén y compras</p>
+      <img src="../img/funcion.png" alt="Flujo de datos entre departamentos" />
     </figure>
   </section>
 
   <!-- Funciones con tabla -->
   <section class="bloque_central aparece">
-    <h2>Funciones principales</h2>
-    <p>La función central es <strong>unificar la base de datos</strong>. A partir de ahí, el ERP permite:</p>
-
-    <table class="tabla_info">
-      <thead>
-        <tr>
-          <th>Función</th>
-          <th>Descripción</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Unificación de datos</td>
-          <td>Todos los departamentos trabajan con los mismos datos en tiempo real</td>
-        </tr>
-        <tr>
-          <td>Automatización</td>
-          <td>Notificaciones automáticas entre módulos al registrar ventas o bajadas de stock</td>
-        </tr>
-        <tr>
-          <td>Sincronización</td>
-          <td>Cambios en un área se reflejan inmediatamente en las demás</td>
-        </tr>
-        <tr>
-          <td>Informes</td>
-          <td>Generación de análisis de rendimiento y tendencias</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="bloque_texto">
+      <h2>Funciones principales</h2>
+      <ul>
+        <li>
+          <strong>Automatización de procesos.</strong> Cuando se registra una venta o el stock de un producto llega a un mínimo se envía una notificación al respectivo módulo (departamento) para que lo tengan en cuenta.
+        </li>
+        <li>
+          <em>Ejemplo de Stock:</em> Se le enviará una notificación al almacén avisando que <strong>quedan pocas unidades del producto</strong>.
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- Módulos con details/summary -->
@@ -101,44 +82,137 @@
     <h2>Módulos de un ERP</h2>
     <p>Los módulos son los bloques funcionales del sistema. Pulsa cada uno para ver más detalles:</p>
 
-    <div class="lista_modulos">
+    <div class="container py-4">
+    <div class="row g-3">
 
-      <details class="modulo">
-        <summary><i class="fas fa-euro-sign"></i> Financiero</summary>
-        <p>Gestión del dinero y el presupuesto. Imprescindible para tomar decisiones.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo1">
+          <img class="foto" src="../img/financiero.png" alt="Financiero">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uno" data-bs-parent="#grupo1">
+                Módulo financiero
+              </button>
+            </h2>
+            <div id="uno" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Gestión del dinero y el presupuesto. Toda empresa necesita conocer su situación financiera para poder tomar decisiones.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <details class="modulo">
-        <summary><i class="fas fa-boxes"></i> Inventarios</summary>
-        <p>Evita roturas de stock y controla el movimiento de mercancías.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo2">
+          <img class="foto" src="../img/inventarios.png" alt="Inventarios">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dos" data-bs-parent="#grupo2">
+                Módulo de inventarios
+              </button>
+            </h2>
+            <div id="dos" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Evita roturas de stock siempre que esté bien alimentado y haya alguien pendiente de las alertas para actuar a tiempo.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <details class="modulo">
-        <summary><i class="fas fa-shopping-cart"></i> Ventas y CRM</summary>
-        <p>Maneja datos de ventas y ayuda a mantener a los clientes satisfechos.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo3">
+          <img class="foto" src="../img/ventas.jpg" alt="Ventas">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tres" data-bs-parent="#grupo3">
+                Módulo de ventas y CRM
+              </button>
+            </h2>
+            <div id="tres" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Maneja los datos de las ventas, ayuda a vender más y a mantener a los clientes contentos. Depende de los comerciales, no del software.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <details class="modulo">
-        <summary><i class="fas fa-truck"></i> Compras</summary>
-        <p>Controla compras a proveedores para asegurar el suministro.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo4">
+          <img class="foto" src="../img/compras.png" alt="Compras">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cuatro" data-bs-parent="#grupo4">
+                Módulo de compras
+              </button>
+            </h2>
+            <div id="cuatro" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Controla las compras a los proveedores y ayuda a que tengas lo necesario para operar tu empresa.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <details class="modulo">
-        <summary><i class="fas fa-users"></i> Recursos Humanos</summary>
-        <p>Gestiona empleados: salarios, nóminas, vacaciones y bajas.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo5">
+          <img class="foto" src="../img/rrhh.jpg" alt="RRHH">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cinco" data-bs-parent="#grupo5">
+                Módulo de RRHH
+              </button>
+            </h2>
+            <div id="cinco" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Gestiona a los empleados: salarios, nóminas, vacaciones, bajas...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <details class="modulo">
-        <summary><i class="fas fa-industry"></i> Producción</summary>
-        <p>Planifica y controla la fabricación. Solo útil si la empresa produce.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo6">
+          <img class="foto" src="../img/produccion.png" alt="Producción">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#seis" data-bs-parent="#grupo6">
+                Módulo de producción
+              </button>
+            </h2>
+            <div id="seis" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Te ayuda a planificar, controlar y fabricar los productos. Si la empresa no fabrica, no tiene sentido pagar por este módulo.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <details class="modulo">
-        <summary><i class="fas fa-chart-bar"></i> Informes</summary>
-        <p>Detecta tendencias, épocas de mayor demanda y rendimiento general.</p>
-      </details>
+      <div class="col-6">
+        <div class="caja accordion" id="grupo7">
+          <img class="foto" src="../img/analisis.jpg" alt="Informes">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#siete" data-bs-parent="#grupo7">
+                Módulo de informes y análisis
+              </button>
+            </h2>
+            <div id="siete" class="accordion-collapse collapse">
+              <div class="accordion-body text-muted">
+                Muestra en qué épocas del año hay más demanda, en qué países tiene mejor encaje el producto, y otra información clave para tomar decisiones.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </div>
 
     <p class="nota"><i class="fas fa-info-circle"></i> No puedes instalar cualquier módulo. Depende de la licencia, la compatibilidad y si tiene sentido para tu negocio.</p>
   </section>
