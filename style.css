@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+ 
+/* ─── Todo ─────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+/* ─── Página ─────────────────────────────────────────────── */
+.pagina {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #0e0f13;
+  min-height: 100vh; /*vh tamaño de la ventana*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+ 
+/* ─── Cabecera ───────────────────────────────────────────── */
+.cabecera {
+  text-align: center;
+  margin-bottom: 36px;
+}
+ 
+.cabecera-etiqueta {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6dbbe8;
+  border: 1px solid rgba(109, 150, 232, 0.3);
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+ 
+.cabecera-titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #e8e9ed;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+ 
+.cabecera-titulo span {
+  color: #6dbbe8;
+}
+ 
+/* ─── Envoltorio del carrusel ────────────────────────────── */
+.envoltorio-carrusel {
+  width: 850px;
+}
+ 
+/* ─── Diapositiva ────────────────────────────────────────── */
+.diapositiva {
+  background-color: #16181f;
+  border: 1px solid #2a2d38;
+  border-radius: 14px;
+  padding: 52px 60px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+ 
+/* ─── Número de diapositiva ──────────────────────────────── */
+.numero-diapositiva {
+  font-size: 11px;
+  font-weight: 500; /*grosor de la letra*/
+  letter-spacing: 3px; /*espacio entre letras*/
+  text-transform: uppercase; /*Pasa el texto a mayúsculas*/
+  color: #6dbbe8;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /*espacio entre elementos*/
+}
+ 
+.numero-diapositiva::after { /*Linea*/
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #2a2d38;
+}
+ 
+/* ─── Títulos ────────────────────────────────────────────── */
+.diapositiva-titulo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #e8e9ed;
+  line-height: 1.25; /*la distancia vertical entre las líneas de texto.*/
+  margin-bottom: 20px;
+}
+ 
+/* ─── Párrafos ───────────────────────────────────────────── */
+.diapositiva-texto {
+  font-size: 15px;
+  font-weight: 300;
+  color: #8b8fa8;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+ 
+.diapositiva-texto strong {
+  color: #e8e9ed;
+  font-weight: 500;
+}
+ 
+/* ─── Lista ──────────────────────────────────────────────── */
+.lista-erp {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*fr: representar una fracción del espacio libre disponible en el contenedor de la cuadrícula.*/
+  gap: 0 28px;
+}
+ 
+.lista-erp-columna {
+  grid-template-columns: 1fr;
+}
+ 
+.lista-erp-elemento {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8b8fa8;
+  padding: 9px 0 9px 20px;
+  border-bottom: 1px solid #2a2d38;
+  position: relative;
+  line-height: 1.5;
+}
+ 
+.lista-erp-elemento:last-child { 
+  border-bottom: none; 
+}
+ 
+.lista-erp-elemento::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #6dbbe8;
+  font-size: 10px;
+  top: 11px;
+}
+ 
+.lista-erp__elemento strong {
+  color: #e8e9ed;
+  font-weight: 500;
+  display: block;
+  font-size: 13px;
+}
+ 
+/* ─── Tabla comparativa ──────────────────────────────────── */
+.tabla-comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 12px;
+}
+ 
+.tabla-comparativa-encabezado th {
+  background: transparent;
+  color: #6dbbe8;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(232,201,109,0.4);
+  text-align: left;
+}
+ 
+.tabla-comparativa-fila td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #2a2d38;
+  color: #8b8fa8;
+  vertical-align: middle;
+  font-weight: 300;
+}
+ 
+.tabla-comparativa-fila td:first-child {
+  color: #e8e9ed;
+  font-weight: 500;
+}
+ 
+.tabla-comparativa-fila:last-child td { border-bottom: none; }
+ 
+.tabla-comparativa-fila:hover td {
+  background-color: rgba(255,255,255,0.02);
+  transition: background-color 0.2s;
+}
+ 
+/* ─── Diapositiva portada / cierre ───────────────────────── */
+.diapositiva-portada {
+  background: linear-gradient(135deg, #091a29 0%, #16181f 65%);
+  border-color: rgba(109, 158, 232, 0.2);
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.diapositiva-portada::before {
+  content: 'ERP';
+  position: absolute;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 220px;
+  font-weight: 900;
+  color: rgba(232,201,109,0.04);
+  letter-spacing: -10px;
+  pointer-events: none;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+ 
+.diapositiva-portada .numero-diapositiva { justify-content: center; }
+.diapositiva-portada .numero-diapositiva::after { display: none; }
+ 
+.diapositiva-portada .diapositiva-titulo {
+  font-size: 46px;
+  color: #6dbbe8;
+}
+ 
+.diapositiva-portada .diapositiva-texto {
+  max-width: 500px;
+}
+ 
+/* ─── Indicadores ────────────────────────────────────────── */
+.carousel-indicators {
+  bottom: -38px;
+  gap: 6px;
+}
+ 
+.carousel-indicators [data-bs-target] {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background-color: #2a2d38;
+  border: none;
+  opacity: 1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+ 
+.carousel-indicators .active {
+  background-color: #6dbbe8;
+  transform: scale(1.5);
+}
+ 
+/* ─── Botones de navegación ──────────────────────────────── */
+.control-anterior,
+.control-siguiente {
+  width: 42px !important;
+  height: 42px !important;
+  background-color: #16181f !important;
+  border: 1px solid #2a2d38 !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  transition: border-color 0.25s, transform 0.25s !important;
+}
+ 
+.control-anterior { left: -21px !important; }
+.control-siguiente { right: -21px !important; }
+ 
+.control-anterior:hover,
+.control-siguiente:hover {
+  border-color: #6dbbe8 !important;
+  transform: translateY(-50%) scale(1.1) !important;
+}
+ 
+.control-anterior .carousel-control-prev-icon,
+.control-siguiente .carousel-control-next-icon {
+  width: 14px; height: 14px;
+  filter: brightness(0) invert(0.7);
+}
+ 
+/* ─── Pie ─────────────────────────────────────────────────── */
+.pie {
+  margin-top: 58px;
+  font-size: 11px;
+  color: #8b8fa8;
+  opacity: 0.35;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

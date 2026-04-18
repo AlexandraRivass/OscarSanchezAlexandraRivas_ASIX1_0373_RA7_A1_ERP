@@ -33,27 +33,215 @@
   <p>El resumen visual de todo el trabajo sobre sistemas ERP</p>
 </div>
 
-<main class="pagina">
+<main class="pagina1 pagina">
 
   <!-- Sección embed de la presentación -->
   <section class="bloque_central aparece">
-    <h2><i class="fas fa-desktop"></i> Diapositivas del proyecto</h2>
-    <p>
-      Aquí encontrarás el resumen visual de nuestro estudio sobre ERP. La presentación cubre la definición, los módulos principales, la comparativa de soluciones y las conclusiones finales.
-    </p>
 
-    <!-- Embed de Google Slides o Canva — sustituye el src por el enlace real -->
-    <div class="presentacion_embed">
-      <iframe
-        src="https://docs.google.com/presentation/d/e/EJEMPLO/embed?start=false&loop=false&delayms=3000"
-        title="Presentación sobre Sistemas ERP"
-        allowfullscreen>
-      </iframe>
+
+    <!-- Carrusel ERP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <div class="envoltorio-carrusel">
+      <div class="cabecera">
+        <div class="cabecera-etiqueta">Sistemas de información</div>
+        <h1 class="cabecera-titulo">Enterprise <span>Resource</span> Planning</h1>
+      </div>
+
+      <div id="carruselErp" class="carousel slide">
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="3" aria-label="Diapositiva 4"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="4" aria-label="Diapositiva 5"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="5" aria-label="Diapositiva 6"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="6" aria-label="Diapositiva 7"></button>
+          <button type="button" data-bs-target="#carruselErp" data-bs-slide-to="7" aria-label="Diapositiva 8"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <!-- 1 · Portada -->
+          <div class="carousel-item active" data-bs-interval="8000">
+            <div class="diapositiva diapositiva-portada">
+              <div class="numero-diapositiva">Presentación</div>
+              <h2 class="diapositiva-titulo">¿Qué es un ERP?</h2>
+              <p class="diapositiva-texto">Sistema que integra todos los departamentos de una empresa en una única plataforma con base de datos centralizada.</p>
+            </div>
+          </div>
+
+          <!-- 2 · Definición -->
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">01 · Definición</div>
+              <h2 class="diapositiva-titulo">¿Qué es y para qué sirve?</h2>
+              <p class="diapositiva-texto">
+                Un ERP integra todos los departamentos para que se comuniquen entre sí. Cuando hay un cambio en un área, el sistema <strong>actualiza y avisa automáticamente</strong> a los departamentos afectados.
+              </p>
+              <p class="diapositiva-texto">
+                Su función principal es <strong>conectar los departamentos</strong> que dependen de datos comunes, garantizando que la información llegue correctamente y en tiempo real.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 · Funciones -->
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">02 · Funciones</div>
+              <h2 class="diapositiva-titulo">¿Qué funciones realiza?</h2>
+              <p class="diapositiva-texto">La función central es <strong>unificar la base de datos</strong>, de modo que todos los departamentos compartan los mismos datos actualizados al instante.</p>
+              <ul class="lista-erp lista-erp-columna">
+                <li class="lista-erp-elemento">Automatización de procesos repetitivos</li>
+                <li class="lista-erp-elemento">Notificaciones entre módulos (ej: stock mínimo → aviso al almacén)</li>
+                <li class="lista-erp-elemento">Centralización de toda la información</li>
+                <li class="lista-erp-elemento">Informes y análisis en tiempo real</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4 · Módulos -->
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">03 · Módulos</div>
+              <h2 class="diapositiva-titulo">Tipos de módulos</h2>
+              <ul class="lista-erp">
+                <li class="lista-erp-elemento"><strong>Financiero</strong>Gestión del dinero y presupuesto</li>
+                <li class="lista-erp-elemento"><strong>Inventarios</strong>Evita roturas de stock</li>
+                <li class="lista-erp-elemento"><strong>Ventas / CRM</strong>Datos de ventas y clientes</li>
+                <li class="lista-erp-elemento"><strong>Compras</strong>Control de proveedores</li>
+                <li class="lista-erp-elemento"><strong>RRHH</strong>Salarios, nóminas y vacaciones</li>
+                <li class="lista-erp-elemento"><strong>Producción</strong>Planificación y fabricación</li>
+                <li class="lista-erp-elemento"><strong>Informes</strong>Análisis y toma de decisiones</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4b · Clasificación de módulos -->
+          <div class="carousel-item" data-bs-interval="9000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">03b · Módulos</div>
+              <h2 class="diapositiva-titulo">¿Cómo se clasifican?</h2>
+              <ul class="lista-erp lista-erp-columna">
+                <li class="lista-erp-elemento">
+                  <strong>Básicos</strong>
+                  Imprescindibles en cualquier empresa: finanzas, ventas, compras y RRHH.
+                </li>
+                <li class="lista-erp-elemento">
+                  <strong>Opcionales</strong>
+                  Dependen del negocio: producción, inventarios… Solo si tiene sentido instalarlo.
+                </li>
+                <li class="lista-erp-elemento">
+                  <strong>Verticales</strong>
+                  Para sectores concretos: trazabilidad en alimentación, gestión de camas en sanidad.
+                </li>
+              </ul>
+              <p class="diapositiva-texto" style="margin-top: 1.2rem; font-size: 0.9em; opacity: 0.85;">
+                No puedes instalar cualquier módulo — depende de tu licencia, la compatibilidad y si aporta valor a tu empresa.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5 · Integración de módulos -->
+          <div class="carousel-item" data-bs-interval="9000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">04 · Integración</div>
+              <h2 class="diapositiva-titulo">¿Qué es la integración de módulos?</h2>
+              <p class="diapositiva-texto">
+                Todos los módulos <strong>comparten la misma base de datos</strong> y se comunican entre sí de forma automática. Nadie tiene que introducir los mismos datos dos veces.
+              </p>
+              <ul class="lista-erp lista-erp-columna">
+                <li class="lista-erp-elemento"><strong>Organización</strong>Toda la información en un solo sitio: ventas, stock, empleados…</li>
+                <li class="lista-erp-elemento"><strong>Productividad</strong>Sin excels separados. Todo actualizado en tiempo real.</li>
+                <li class="lista-erp-elemento"><strong>Sin errores</strong>El sistema actualiza el inventario solo. Sin tocar nada a mano.</li>
+                <li class="lista-erp-elemento"><strong>Decisiones</strong>Detecta patrones como picos de demanda en diciembre para anticipar pedidos.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 6 · Beneficios -->
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">04 · Beneficios</div>
+              <h2 class="diapositiva-titulo">¿Por qué implementar un ERP?</h2>
+              <ul class="lista-erp lista-erp-columna">
+                <li class="lista-erp-elemento">Integración de datos sin silos ni duplicados</li>
+                <li class="lista-erp-elemento">Automatización que libera tiempo a los empleados</li>
+                <li class="lista-erp-elemento">Visibilidad completa y decisiones en tiempo real</li>
+                <li class="lista-erp-elemento">Reducción de costes al consolidar sistemas</li>
+                <li class="lista-erp-elemento">Escalabilidad para crecer con la empresa</li>
+                <li class="lista-erp-elemento">Mejor servicio al cliente con información inmediata</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 6 · Comparativa -->
+          <div class="carousel-item" data-bs-interval="10000">
+            <div class="diapositiva">
+              <div class="numero-diapositiva">05 · Comparativa</div>
+              <h2 class="diapositiva-titulo">ERP del mercado</h2>
+              <table class="tabla-comparativa">
+                <thead>
+                  <tr class="tabla-comparativa-encabezado">
+                    <th>Solución</th>
+                    <th>Orientación</th>
+                    <th>Precio desde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tabla-comparativa-fila">
+                    <td>SAP</td>
+                    <td>Grandes empresas</td>
+                    <td>38 €/mes</td>
+                  </tr>
+                  <tr class="tabla-comparativa-fila">
+                    <td>MS Dynamics NAV</td>
+                    <td>PYMES</td>
+                    <td>65,50 €/usuario/mes</td>
+                  </tr>
+                  <tr class="tabla-comparativa-fila">
+                    <td>Odoo</td>
+                    <td>Pymes, cualquier sector</td>
+                    <td>Gratuito (Community)</td>
+                  </tr>
+                  <tr class="tabla-comparativa-fila">
+                    <td>Cegid</td>
+                    <td>Industria y sanidad</td>
+                    <td>Presupuesto a medida</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 7 · Conclusión -->
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="diapositiva diapositiva-portada">
+              <div class="numero-diapositiva">Conclusión</div>
+              <h2 class="diapositiva-titulo">Un ERP no es un gasto,<br>es una inversión</h2>
+              <p class="diapositiva-texto">Centraliza datos, automatiza procesos, reduce errores y prepara a la empresa para crecer. La clave está en elegir el ERP y los módulos adecuados para cada negocio.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botones de navegación -->
+        <button class="carousel-control-prev control-anterior" type="button" data-bs-target="#carruselErp" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next control-siguiente" type="button" data-bs-target="#carruselErp" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+      </div>
     </div>
 
-    <p class="nota" style="margin-top:1rem;">
-      <i class="fas fa-info-circle"></i> Si el iframe no carga, asegúrate de que la presentación esté publicada como "acceso para cualquiera con el enlace".
-    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </section>
 
 
